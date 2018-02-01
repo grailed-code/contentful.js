@@ -58,7 +58,7 @@
   ],
   "dependencies": {
     "@contentful/axios": "^0.18.0",
-    "contentful-sdk-core": "^5.0.1",
+    "contentful-sdk-core": "grailed-code/contentful-sdk-core",
     "json-stringify-safe": "^5.0.1",
     "lodash": "^4.17.4"
   },
