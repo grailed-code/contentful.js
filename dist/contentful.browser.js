@@ -1993,6 +1993,10 @@ function createClient(params) {
   // Use resolveLinks param if specified, otherwise default to true
   var resolveLinks = !!('resolveLinks' in params ? params.resolveLinks : true);
   var shouldLinksResolve = Object(__WEBPACK_IMPORTED_MODULE_3__create_link_resolver__["a" /* default */])(resolveLinks);
+  // const userAgentHeader = getUserAgentHeader(`contentful.js/${__VERSION__}`,
+  //   params.application,
+  //   params.integration
+  // )
   var userAgentHeader = Object(__WEBPACK_IMPORTED_MODULE_1_contentful_sdk_core__["d" /* getUserAgentHeader */])('contentful.js/' + '0.0.0-determined-by-semantic-release', params.application, params.integration);
   params.defaultHostname = 'cdn.contentful.com';
   params.headers = _extends({}, params.headers, {
